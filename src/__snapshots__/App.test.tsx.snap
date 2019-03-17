@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with no props 1`] = `
+<BrowserRouter>
+  <div
+    className="App"
+  >
+    <WithStyles(Navigation) />
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/api"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/tutorials"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/store"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/signup"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/login"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/blog"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/about"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/spacex"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/calculator"
+      />
+      <Route
+        component={[Function]}
+      />
+    </Switch>
+  </div>
+</BrowserRouter>
+`;

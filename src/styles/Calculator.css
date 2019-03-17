@@ -1,0 +1,15 @@
+button {
+    padding: 2.5em;
+}
+
+.calculator {
+    font-size: xx-large;
+}
+
+.result {
+    font-size: xx-large;
+}
+
+.result span {
+    font-weight: 800;
+}

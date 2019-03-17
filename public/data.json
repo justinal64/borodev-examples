@@ -1,0 +1,34 @@
+[{
+    "username": "Justinal64",
+    "first_name": "justin",
+    "last_name": "leggett",
+    "kids": 4,
+    "spouse": "katie",
+    "missions": {
+        "name": "COTS 1",
+        "flight": 7
+    },
+    "details": "Reentered after three weeks in orbit"
+}, {
+    "username": "Justinal64",
+    "first_name": "justin",
+    "last_name": "leggett",
+    "kids": 4,
+    "spouse": "kaie",
+    "missions": {
+        "name": "COTS 1",
+        "flight": 7
+    },
+    "details": "Reentered after three weeks in orbit"
+}, {
+    "username": "Justinal64",
+    "first_name": "justin",
+    "last_name": "leggett",
+    "kids": 4,
+    "spouse": "katie",
+    "missions": {
+        "name": "COTS 1",
+        "flight": 7
+    },
+    "details": "Reentered after three weeks in orbit"
+}]
