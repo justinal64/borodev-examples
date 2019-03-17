@@ -18,7 +18,6 @@ export const SpaceX = () => {
     let result: JSX.Element[] = [];
     {
       arrayToMap.map((ele: string, index: number) => {
-        // arrayToMap.map((ele: any, index: any) => { // talk about what happens if the type is any.....
         if (ele.includes("jpg") || ele.includes("png")) {
           result.push(
             <div key={index}>

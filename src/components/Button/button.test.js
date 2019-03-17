@@ -26,6 +26,7 @@ describe("Button", () => {
     let wrapper;
     let instance;
 
+    // TODO: What is beforeEach
     beforeEach(() => {
       wrapper = mount(<Button onClick={() => {}} counter={0} />);
       instance = wrapper.instance();
@@ -59,7 +60,6 @@ describe("Button", () => {
     let wrapper;
     let instance;
 
-    // TODO: What is beforeEach
     beforeEach(() => {
       wrapper = mount(<Button onClick={() => {}} counter={2} />);
       instance = wrapper.instance();
