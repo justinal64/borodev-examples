@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import { Button, TextField } from "@material-ui/core";
 import "../../styles/Calculator.css";
-import {
-  Add,
-  Subtract,
-  Multiply,
-  Divide,
-  IsNumber
-} from "../../helper.js/helper";
 
 export const Calculator = () => {
   const [result, setResult] = useState(0);

@@ -7,7 +7,7 @@ describe("Button", () => {
   describe("state", () => {
     it("renders button with passed props", () => {
       // Arrange
-      const wrapper = mount(<Button onClick={() => {}} />);
+      const wrapper = mount(<Button />);
       const instance = wrapper.instance();
 
       // Act/Assert
@@ -18,9 +18,9 @@ describe("Button", () => {
     // TODO: talk about .debug()
   });
 
-  describe("onClick", () => {
+  describe("onClick event", () => {
     // TODO: Show why this is a bad idea!!!!
-    // const wrapper = mount(<Button onClick={() => {}} />);
+    // const wrapper = mount(<Button />);
     // const instance = wrapper.instance();
 
     let wrapper;
@@ -28,12 +28,12 @@ describe("Button", () => {
 
     // TODO: What is beforeEach
     beforeEach(() => {
-      wrapper = mount(<Button onClick={() => {}} counter={0} />);
+      wrapper = mount(<Button counter={0} />);
       instance = wrapper.instance();
     });
 
     // Arrange
-    it("clicking and than looking at state", () => {
+    it("clicking and lookign at state.counter", () => {
       // TODO: Talk about .simulate
       wrapper.find("button").simulate("click");
       // console.log(wrapper.debug());
@@ -41,6 +41,7 @@ describe("Button", () => {
       expect(instance.state.counter).toBe(1);
     });
 
+    // TODO: Why test this?
     it("simulate clicking 4 times", () => {
       // Arrange
       const button = wrapper.find("button");
@@ -61,7 +62,7 @@ describe("Button", () => {
     let instance;
 
     beforeEach(() => {
-      wrapper = mount(<Button onClick={() => {}} counter={2} />);
+      wrapper = mount(<Button counter={2} />);
       instance = wrapper.instance();
     });
 
@@ -93,7 +94,7 @@ describe("Button", () => {
     let instance;
 
     beforeEach(() => {
-      wrapper = mount(<Button onClick={() => {}} counter={2} />);
+      wrapper = mount(<Button counter={0} />);
       instance = wrapper.instance();
     });
 
@@ -109,7 +110,6 @@ describe("Button", () => {
       // Assert
       // this is testing that the function was called
       expect(spyOnUpdateCounter).toBeCalledTimes(1);
-      expect(instance.state.counter).toBe(0);
     });
 
     it("check state after calling UpdateCounter with a value", () => {
@@ -134,6 +134,7 @@ describe("Button", () => {
       expect(spyOnUpdateCounter).toBeCalledTimes(3);
     });
 
+    // TODO: Why would you want to mock the implementation of a function??
     it("mocking the data coming back from UpdateCounter", () => {
       // Arrange
       const counterMock = jest.spyOn(instance, "UpdateCounter");
@@ -143,6 +144,7 @@ describe("Button", () => {
       expect(instance.UpdateCounter(21)).toEqual("I need more power!!!");
     });
 
+    // Don't write a test that looks like this.....
     it("mocking the data coming back from UpdateCounter", () => {
       // Arrange
       const counterMock = jest.spyOn(instance, "UpdateCounter");
@@ -169,11 +171,19 @@ describe("Button", () => {
     // Why are we rendering the component a different way???
     it("renders button with passed props", () => {
       const component = renderer.create(
-        <Button onClick={() => {}} label="test label" />
+        <Button updateState={() => {}} label="test label" />
       );
       expect(component.toJSON()).toMatchSnapshot();
     });
 
     // TODO: Lets create a snapshot
+    // it("label = test 123", () => {
+    //   // Arrange
+    //   const component = renderer.create(
+    //     <Button label="test 123" />
+    //   );
+    //   // Act/Assert
+    //   expect(component.toJSON()).toMatchSnapshot();
+    // });
   });
 });
