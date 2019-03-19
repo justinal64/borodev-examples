@@ -190,7 +190,7 @@ describe("Testing Calculator's logic", () => {
     it("spyOn returns mock data", async () => {
       spyOnGetData.mockResolvedValue(21);
       let result = await Helpers.GetData();
-      //   // TODO: talk about why this check is here.... hint. look at afterEach;
+      // TODO: talk about why this check is here.... hint. look at afterEach;
       expect(spyOnGetData).toBeCalledTimes(1);
       expect(result).toBe(21);
     });

@@ -15,15 +15,13 @@ class Button extends Component {
   }
 
   render() {
-    const { label, onClick } = this.props;
+    const { label } = this.props;
     const { counter } = this.state;
 
     return (
       <button
         onClick={() => {
-          this.setState({ counter: counter + 1 }, () => {
-            onClick(this.state.counter);
-          });
+          this.setState({ counter: counter + 1 });
         }}
       >
         {label} {counter}
@@ -33,7 +31,6 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
   label: PropTypes.string
 };
 

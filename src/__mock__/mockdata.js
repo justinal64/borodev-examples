@@ -1,4 +1,4 @@
-const ArrayOfStrings = ["This", "is", "a", "arrayOfStrings"];
+const ArrayOfStrings = ["This", "is", "an", "arrayOfStrings"];
 
 const NumToAdd = [1, 2];
 
